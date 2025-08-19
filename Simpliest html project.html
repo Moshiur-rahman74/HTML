@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+</head>
+<body style="font-family: Arial; margin: 20px;">
+
+    <h1 style="text-align:center;">📚 Library Management System</h1>
+    <hr>
+
+    <!-- Book Entry Form -->
+    <h2>Add New Book</h2>
+    <form>
+        <label>Book ID:</label><br>
+        <input type="text" name="bookId" required><br><br>
+
+        <label>Book Title:</label><br>
+        <input type="text" name="title" required><br><br>
+
+        <label>Author:</label><br>
+        <input type="text" name="author" required><br><br>
+
+        <label>Category:</label><br>
+        <input type="text" name="category"><br><br>
+
+        <label>Availability:</label><br>
+        <select name="availability">
+            <option value="Available">Available</option>
+            <option value="Issued">Issued</option>
+        </select><br><br>
+
+        <input type="submit" value="Add Book">
+    </form>
+    <hr>
+
+    <!-- Books List -->
+    <h2>Books List</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>HTML Basics</td>
+            <td>John Doe</td>
+            <td>Web Development</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Learn CSS</td>
+            <td>Jane Smith</td>
+            <td>Web Design</td>
+            <td>Issued</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Search Section -->
+    <h2>Search Book</h2>
+    <form>
+        <label>Enter Book Title or ID:</label><br>
+        <input type="text" name="search"><br><br>
+        <input type="submit" value="Search">
+    </form>
+
+</body>
+</html>
